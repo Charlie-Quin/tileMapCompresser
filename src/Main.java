@@ -41,6 +41,10 @@ public class Main {
 
         String name = scan.nextLine();
 
+        System.out.println("Enter a texture file path: ");
+
+        String filePath = scan.nextLine();
+
         System.out.println("Enter width: ");
 
         int width = Integer.parseInt(scan.nextLine());
@@ -53,7 +57,7 @@ public class Main {
 
         int tileSize = Integer.parseInt(scan.nextLine());
 
-        String output = "public static TileMapInfo " + name + " = new TileMapInfo(new Texture(\"texture.png\"),";
+        String output = "public static TileMapInfo " + name + " = new TileMapInfo(new Texture(\"" + filePath + "\"),";
         output += width + ",";
         output += height + ",";
         output += tileSize + ",";
